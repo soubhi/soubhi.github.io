@@ -46,21 +46,7 @@ const AppHeader = () => {
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
-						<Link to="/">
-							{activeTheme === 'dark' ? (
-								<img
-									src={logoDark}
-									className="w-36"
-									alt="Dark Logo"
-								/>
-							) : (
-								<img
-									src={logoLight}
-									className="w-36"
-									alt="Dark Logo"
-								/>
-							)}
-						</Link>
+					
 					</div>
 
 					{/* Theme switcher small screen */}
@@ -108,9 +94,16 @@ const AppHeader = () => {
 					}
 				>
 					<Link
-						to="/projects"
+						to="/"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
+					>
+						Home
+					</Link>
+					<Link
+						to="/projects"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Home"
 					>
 						Projects
 					</Link>
@@ -120,6 +113,13 @@ const AppHeader = () => {
 						aria-label="About Me"
 					>
 						About Me
+					</Link>
+					<Link
+						to="/resume"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Resume"
+					>
+						Resume
 					</Link>
 					<Link
 						to="/contact"
@@ -142,6 +142,13 @@ const AppHeader = () => {
 				{/* Header links large screen */}
 				<div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
 					<Link
+						to="/"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Projects"
+					>
+						Home
+					</Link>
+					<Link
 						to="/projects"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
@@ -154,6 +161,13 @@ const AppHeader = () => {
 						aria-label="About Me"
 					>
 						About Me
+					</Link>
+					<Link
+						to="/resume"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Resume"
+					>
+						Resume
 					</Link>
 					<Link
 						to="/contact"
