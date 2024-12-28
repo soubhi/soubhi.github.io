@@ -1,5 +1,5 @@
 [build]
-command = "yarn run build"
+command = "npm install -g yarn && yarn install && yarn run build"
 publish = "build"
 
 [build.environment]
